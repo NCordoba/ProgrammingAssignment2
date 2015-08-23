@@ -3,6 +3,12 @@
 
 ## Write a short comment describing this function
 
+## makeCacheMatrix creates a list containing a function to
+## 1. set the value of the matrix
+## 2. get the value of the matrix
+## 3. set the value of inverse of the matrix
+## 4. get the value of inverse of the matrix
+
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y){
@@ -19,6 +25,11 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
+## The cacheSolve function returns an inverse of the
+## given matrix, after checking if the inverse has already
+## been computed. If so, it uses the found value, otherwise,
+## the calculation is performed and saved. 
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
